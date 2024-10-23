@@ -1,0 +1,4 @@
+This is the first run,
+parallel envs = 1
+pop_size = 25
+PPO timesteps = 1e6
