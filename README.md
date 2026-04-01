@@ -1,5 +1,3 @@
-Overview:
-
 ## Evolving Soft Robot Morphologies with Generative Diffusion Models
 
 This Git repository contains the code developed for my Bachelor's thesis
@@ -9,8 +7,6 @@ The thesis is included in the repository for reference (see
 explanation of the research and methods used, and explore the code to
 inspect the implementation of the models and experiments.
 
-
-
 #### Note:
 
 This repository is currently under development to enable pip-installation and add scripts using EvoGym environments without having to install that repository, but you can install it from source in the meantime, and explore the concepts on a simplified environment.
@@ -18,7 +14,6 @@ This repository is currently under development to enable pip-installation and ad
 ## Setup:
 
 This setup was tested with Ubuntu Noble and Python 3.10, but should be compatible with any system also compatible with Evogym (see the github: [https://github.com/EvolutionGym/evogym](https://github.com/EvolutionGym/evogym))
-
 
 1. (Recommended: Conda environment)
 
@@ -39,7 +34,6 @@ pip install torch==2.9.1 torchvision==0.24.1 torchaudio==2.9.1 --index-url https
 pip install -e .
 ```
 
-
 ## Example scripts:
 
 **run_simple_generational_dm.py:**
@@ -57,11 +51,9 @@ Entire pipeline of the algorithm:
 
 * two alternative algorithms on the same problem (genetic algorithm and CPPN-NEAT)
 
-
 **visualize_forward_process.py:**
 
 Visualizes adding noise to a robot configuration for different timesteps
-
 
 **train_diffusion.py:**
 
@@ -70,7 +62,6 @@ One step of training the model on the survivors and sampling. In order to illust
 **eval_overfitting.py:**
 
 Similarly to train_diffusion.py, train on one survivor and sample to analyze how often the input robot is reconstructed.
-
 
 ### Source code:
 
