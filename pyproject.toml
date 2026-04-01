@@ -1,0 +1,35 @@
+[build-system]
+requires = ["hatchling >= 1.26"]
+build-backend = "hatchling.build"
+
+[project]
+name = "evolving-robots-diffusion"
+version = "0.0.1"
+authors = [
+  { name="John Stewardson", email="jjf.stewardson@gmail.com" },
+]
+description = "Python code for the Bachelor thesis: Evolving Soft Robot Morphologies with Generative Diffusion Models"
+readme = "README.md"
+requires-python = ">=3.10,<3.11"
+dependencies = [
+  "matplotlib",
+  "evogym",
+  "tqdm",
+  "tensorboard",
+  "neat-python @ git+https://github.com/yunshengtian/neat-python@2762ab630838520ca6c03a866e8a158f592b0370",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+
+[project.urls]
+Homepage = "https://github.com/JohnStewardson/evolving_robots_diffusion"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/evolving_robots_diffusion", "src/pytorch_neat"]
